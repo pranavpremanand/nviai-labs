@@ -1,0 +1,1032 @@
+<!--========================================================= 
+Item Name: Borox - Tailwind CSS Personal Portfolio Template.
+Author: ashishmaraviya
+Version: 1
+Copyright 2023
+============================================================-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NviAi Labs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- site Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/font/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/aos.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+
+    <!-- main style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="overflow-x-hidden">
+    <!-- Loader -->
+    <div id="bx-overlay">
+      <span class="loader"></span>
+    </div>
+
+    <!-- header -->
+    <header class="bg-[#f6f8ff] w-full bx-static">
+      <nav class="border-gray-200 py-2">
+        <div
+          class="flex flex-wrap justify-between items-center px-6 mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] max-[320px]:px-[12px]"
+        >
+          <a href="index.html" class="flex items-center">
+            <img src="assets/img/logo.png" class="w-[90px]" alt="Logo" />
+          </a>
+          <div class="flex items-center lg:order-2">
+            <button
+              data-collapse-toggle="mobile-menu"
+              type="button"
+              id="dropdown-toggle"
+              class="inline-flex items-center border p-2 text-lg text-gray-500 rounded-lg lg:hidden"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+          <div
+            class="justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            id="mobile-menu"
+          >
+            <ul
+              class="flex flex-col font-medium lg:flex-row lg:space-x-8 2xl:border-0 lg:border-0 border lg:mt-0 lg-mb-4 lg:p-[0] lg:border-none lg:rounded-[0] lg:text-[15px] mt-4 p-[15px] 2xl:mb-0 xl:mb-0 lg:mb-0 mb-2 border-[#eee] rounded-[30px] text-[13px]"
+              id="top-menu"
+            >
+              <li class="nav-item active">
+                <a href="#home" class="block py-2 pr-4 pl-3 text-[#000] lg:p-0"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="block py-2 pr-4 pl-3 text-[#000] lg:p-0"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#services"
+                  class="block py-2 pr-4 pl-3 text-[#000] lg:p-0"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#portfolio"
+                  class="block py-2 pr-4 pl-3 text-[#000] lg:p-0"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#faq" class="block py-2 pr-4 pl-3 text-[#000] lg:p-0"
+                  >FAQ's</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="#contact"
+                  class="block py-2 pr-4 pl-3 text-[#000] lg:p-0"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero section -->
+    <section id="home" class="section-hero bg-[#f6f8ff] relative">
+      <img
+        class="shape1 absolute w-12 left-72 bottom-36 parallax sm:block hidden"
+        src="assets/img/shape/shape-1.png"
+        alt="shape-1"
+      />
+      <img
+        class="shape2 absolute w-12 top-72 right-32 parallax top sm:block hidden"
+        src="assets/img/shape/shape-2.png"
+        alt="shape-2"
+      />
+      <img
+        class="shape3 absolute w-12 top-48 left-96 parallax left top sm:block hidden"
+        src="assets/img/shape/shape-3.png"
+        alt="shape-3"
+      />
+      <img
+        class="shape4 absolute w-6 bottom-72 left-24 parallax left sm:block hidden"
+        src="assets/img/shape/shape-4.png"
+        alt="shape-4"
+      />
+      <img
+        class="shape5 absolute w-12 bottom-48 right-12 parallax bottom sm:block hidden"
+        src="assets/img/shape/shape-5.png"
+        alt="shape-5"
+      />
+      <div
+        class="flex flex-wrap justify-between items-center mx-auto mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] py-[80px] px-4"
+      >
+        <div
+          class="w-full 2xl:h-[90vh] lg:h-[80vh] h-[70vh] max-[320px]:h-[50vh] flex justify-center items-center px-2 lg:mx-0 md:mx-0 sm:items-center"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <div
+            class="text-center 2xl:text-left xl:text-left lg:text-left md:text-left h-72"
+          >
+            <span class="text-[#006900] text-[18px] font-bold"
+              >Smart Software, Bold Solutions: Elevate Your Business Today</span
+            >
+            <h1
+              class="mt-[25px] text-dark-800 uppercase 2xl:text-[60px] xl:text-[55px] lg:text-[50px] md:text-[45px] text-[40px] font-bold"
+            >
+              Innovation Unleashed
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <img
+          src="assets/img/shape/hero-shape.png"
+          alt="hero-shape"
+          class="absolute bottom-0 left-0 right-0 w-full z-10 bg-center bg-cover"
+        />
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="bg-white 2xl:pb-[80px] pb-[70px] pt-[70px]">
+      <div
+        class="flex flex-wrap justify-between items-center mx-auto mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] max-[320px]:px-[12px]"
+      >
+        <div
+          class="grid lg:grid-cols-2 items-center grid-cols-1 gap-[30px] px-6 max-[320px]:px-[0px]"
+        >
+          <div
+            class="transition-all relative"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+          >
+            <img
+              src="assets/img/shape/shape-6.png"
+              alt="shape-6"
+              class="absolute w-12 top-2.5 left-2.5"
+            />
+            <img
+              src="assets/img/about-us.jpg"
+              alt="about-img-1"
+              class="w-full rounded-lg"
+            />
+            <img
+              src="assets/img/shape/shape-7.png"
+              alt="shape-7"
+              class="absolute w-12 bottom-5 right-2.5"
+            />
+          </div>
+          <div
+            class="transition-all"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+          >
+            <div class="banner mb-[30px]">
+              <span class="text-[14px] text-[#777]">ABOUT US</span>
+              <h2
+                class="mt-[5px] 2xl:text-[35px] xl:text-[33px] lg:text-[30px] md:text-[26px] sm:text-[24px] text-[22px] font-bold"
+              >
+                Who
+                <span class="text-[#006900]"> We Are</span>
+              </h2>
+            </div>
+            <p class="text-[16px] text-[#777] mb-[30px]">
+              At NviAi Labs, we turn ambitious ideas into exceptional software.
+              With a blend of technical prowess and creative ingenuity, we craft
+              solutions that not only meet but exceed your expectations. Our
+              team is driven by a shared vision of leveraging technology to
+              solve real-world problems and drive meaningful change.
+              <br />
+              <br />
+              We pride ourselves on our client-centric approach, focusing on
+              delivering tailored software that meets your specific needs and
+              exceeds your expectations. From early-stage startups to
+              established enterprises, we deliver technology that adapts to your
+              goals and helps you stay ahead in a rapidly evolving digital
+              landscape.
+              <br />
+              <br />
+              Experience the future of software development with NviAi Labs.
+              Let’s create something extraordinary together.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What we do -->
+    <section id="services" class="section-Portfolio 2xl:py-[80px] py-[70px]">
+      <div
+        class="banner text-center mb-[30px]"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="300"
+      >
+        <span class="text-[14px] text-[#777]">SERVICES</span>
+        <h2
+          class="text-center mt-[5px] 2xl:text-[35px] xl:text-[33px] lg:text-[30px] md:text-[26px] sm:text-[24px] text-[22px] font-bold"
+        >
+          What <span class="text-[#006900]">We Do</span>
+        </h2>
+        <!-- <div class="my-[30px]">
+          <p class="text-[20px] text-[#777]">Our Expertise</p>
+          <p class="text-[16px] text-[#777]">
+            Delivering innovative solutions tailored to meet your business
+            needs.
+          </p>
+          <a href="#contact" class="">Get in Touch</a>
+        </div> -->
+      </div>
+      <div
+        class="flex flex-wrap justify-between items-center mx-auto mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] max-[320px]:px-[12px] px-6"
+      >
+        <div class="m-b-minus-24px w-full">
+          <div
+            class="portfolio-content"
+            id="MixItUpDA2FB7"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="600"
+          >
+            <!-- <div class="portfolio-tabs mb-[30px]">
+              <ul
+                class="2xl:flex xl:flex md:flex sm:block place-content-center text-center"
+              >
+                <li
+                  class="text-[14px] text-[#17181c] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#006900] cursor-pointer inline-block active"
+                  data-filter="all"
+                >
+                  ALL
+                </li>
+                <li
+                  class="text-[14px] text-[#17181c] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#006900] cursor-pointer inline-block"
+                  data-filter=".design"
+                >
+                  DESIGN
+                </li>
+                <li
+                  class="text-[14px] text-[#17181c] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#006900] cursor-pointer inline-block"
+                  data-filter=".development"
+                >
+                  DEVELOPMENT
+                </li>
+                <li
+                  class="text-[14px] text-[#17181c] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#006900] cursor-pointer inline-block"
+                  data-filter=".graphics"
+                >
+                  GRAPHICS
+                </li>
+                <li
+                  class="text-[14px] text-[#17181c] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#006900] cursor-pointer inline-block"
+                  data-filter=".templates"
+                >
+                  Templates
+                </li>
+              </ul>
+            </div> -->
+            <div class="portfolio-content-items">
+              <div
+                class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]"
+              >
+                <div class="">
+                  <div
+                    class="portfolio-img min-h-[360px] flex flex-col gap-3 items-center rounded-2xl relative p-5 border rounded-lg"
+                  >
+                    <img
+                      src="assets/img/icons/web-dev.png"
+                      alt="graphics"
+                      class="h-[5rem]"
+                    />
+                    <h2 class="text-2xl font-bold">Web Development</h2>
+                    <p class="text-md text-[#777] text-wrap text-center">
+                      We combine creativity, technical expertise, and a deep
+                      understanding of your business goals to build websites.
+                      our tailored web solutions will help you get there.
+                    </p>
+                    <ul class="w-full text-start">
+                      <li class="text-md text-[#777]">- Landing Websites</li>
+                      <li class="text-md text-[#777]">- Custom Websites</li>
+                      <li class="text-md text-[#777]">- CRM</li>
+                    </ul>
+                    <!-- <h3 class="top-contain absolute top-[15px] right-[15px]">
+                      <span
+                        class="bg-black rounded-full text-white font-normal text-[12px] px-2 py-1"
+                        >3D Graphics</span
+                      >
+                      <span
+                        class="bg-black rounded-full text-white font-normal text-[12px] px-2 py-1"
+                        >Templates</span
+                      >
+                    </h3> -->
+                    <div
+                      class="bottom-contain absolute bottom-4 left-4 right-4"
+                    >
+                      <!-- <div
+                        class="overlay-info px-4 py-2 bg-black bg-opacity-60 rounded-xl grid grid-cols-2 gap-[30px] place-content-between"
+                      >
+                        <a href="#" class="text-white text-sm flex items-center"
+                          >Nitro - Car Service</a
+                        >
+                        <a
+                          href="assets/img/portfolio/img-1.jpg"
+                          data-fancybox="gallery"
+                          class="text-white text-sm grid justify-items-end"
+                        >
+                          <p class="hidden">.</p>
+                          <span
+                            class="bg-[#006900] h-8 w-8 flex justify-center items-center rounded-md"
+                          >
+                            <i class="fa-solid fa-arrow-right"></i>
+                          </span>
+                        </a>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+                  <div
+                    class="portfolio-img min-h-[360px] flex flex-col gap-3 items-center rounded-2xl relative p-5 border rounded-lg"
+                  >
+                    <img
+                      src="assets/img/icons/app-dev.png"
+                      alt="graphics"
+                      class="h-[5rem]"
+                    />
+                    <h2 class="text-2xl font-bold">App Development</h2>
+                    <p class="text-md text-[#777] text-wrap text-center">
+                      We partner with you to create apps that not only meet your
+                      needs but exceed your expectations. We build:
+                    </p>
+                    <ul class="w-full text-start">
+                      <li class="text-md text-[#777]">
+                        - Cross Platform Apps Development
+                      </li>
+                      <li class="text-md text-[#777]">
+                        - Hybrid Apps Development
+                      </li>
+                    </ul>
+                    <div
+                      class="bottom-contain absolute bottom-4 left-4 right-4"
+                    ></div>
+                  </div>
+                </div>
+                <div class="">
+                  <div
+                    class="portfolio-img min-h-[360px] flex flex-col gap-3 items-center rounded-2xl relative p-5 border rounded-lg"
+                  >
+                    <img
+                      src="assets/img/icons/blockchain.png"
+                      alt="graphics"
+                      class="h-[5rem]"
+                    />
+                    <h2 class="text-2xl font-bold">Block Chain</h2>
+                    <p class="text-md text-[#777] text-wrap text-center">
+                      We build decentralized applications, deploy smart
+                      contracts, and create blockchain networks that ensure your
+                      operations are cutting-edge & future-proof.
+                    </p>
+                    <ul class="w-full text-start">
+                      <li class="text-md text-[#777]">- Smart Contracts</li>
+                      <li class="text-md text-[#777]">
+                        - Decentralized Applications (DApps)
+                      </li>
+                      <li class="text-md text-[#777]">
+                        - Blockchain Consulting
+                      </li>
+                    </ul>
+                    <div
+                      class="bottom-contain absolute bottom-4 left-4 right-4"
+                    ></div>
+                  </div>
+                </div>
+                <div class="">
+                  <div
+                    class="portfolio-img min-h-[360px] flex flex-col gap-3 items-center rounded-2xl relative p-5 border rounded-lg"
+                  >
+                    <img
+                      src="assets/img/icons/cloud.png"
+                      alt="graphics"
+                      class="h-[5rem]"
+                    />
+                    <h2 class="text-2xl font-bold">Cloud</h2>
+                    <p class="text-md text-[#777] text-wrap text-center">
+                      We specialize in building scalable cloud applications that
+                      enhance efficiency and drive growth. we offer end-to-end
+                      solutions designed to meet your needs.
+                    </p>
+                    <ul class="w-full text-start">
+                      <li class="text-md text-[#777]">- Cloud Migration</li>
+                      <li class="text-md text-[#777]">
+                        - Cloud Infrastructure Management
+                      </li>
+                      <li class="text-md text-[#777]">- SaaS Development</li>
+                    </ul>
+                    <div
+                      class="bottom-contain absolute bottom-4 left-4 right-4"
+                    ></div>
+                  </div>
+                </div>
+                <div class="">
+                  <div
+                    class="portfolio-img min-h-[360px] flex flex-col gap-3 items-center rounded-2xl relative p-5 border rounded-lg"
+                  >
+                    <img
+                      src="assets/img/icons/ai.png"
+                      alt="graphics"
+                      class="h-[5rem]"
+                    />
+                    <h2 class="text-2xl font-bold">AI Development</h2>
+                    <p class="text-md text-[#777] text-wrap text-center">
+                      We build custom AI solutions that blend seamlessly with
+                      your goals, whether it’s automating tasks, or enhancing
+                      user experiences. We provide:
+                    </p>
+                    <ul class="w-full text-start">
+                      <li class="text-md text-[#777]">
+                        - Machine Learning Models
+                      </li>
+                      <li class="text-md text-[#777]">
+                        - Predictive Analytics
+                      </li>
+                      <li class="text-md text-[#777]">- NLP</li>
+                    </ul>
+                    <div
+                      class="bottom-contain absolute bottom-4 left-4 right-4"
+                    ></div>
+                  </div>
+                </div>
+                <div class="">
+                  <div
+                    class="portfolio-img min-h-[360px] flex flex-col gap-3 items-center rounded-2xl relative p-5 border rounded-lg"
+                  >
+                    <img
+                      src="assets/img/icons/chat-bot.png"
+                      alt="graphics"
+                      class="h-[5rem]"
+                    />
+                    <h2 class="text-2xl font-bold">Chatbot Development</h2>
+                    <p class="text-md text-[#777] text-wrap text-center">
+                      We build chatbots for you, From automating routine tasks
+                      to delivering personalized customer experiences, our
+                      chatbots enhance your business operations.
+                    </p>
+                    <ul class="w-full text-start">
+                      <li class="text-md text-[#777]">- Custom Chatbots</li>
+                      <li class="text-md text-[#777]">- NLP Integration</li>
+                      <li class="text-md text-[#777]">
+                        - AI-driven Customer Support
+                      </li>
+                    </ul>
+                    <div
+                      class="bottom-contain absolute bottom-4 left-4 right-4"
+                    ></div>
+                  </div>
+                </div>
+                <div class="">
+                  <div
+                    class="portfolio-img min-h-[360px] flex flex-col gap-3 items-center rounded-2xl relative p-5 border rounded-lg"
+                  >
+                    <img
+                      src="assets/img/icons/uiux.png"
+                      alt="graphics"
+                      class="h-[5rem]"
+                    />
+                    <h2 class="text-2xl font-bold">UI / UX</h2>
+                    <p class="text-md text-[#777] text-wrap text-center">
+                      We specialize in creating visually captivating interfaces
+                      that resonate with users. From initial concept to final
+                      delivery.
+                    </p>
+                    <ul class="w-full text-start">
+                      <li class="text-md text-[#777]">- User Research</li>
+                      <li class="text-md text-[#777]">
+                        - Wireframing & Prototyping
+                      </li>
+                      <li class="text-md text-[#777]">- Visual Design</li>
+                      <li class="text-md text-[#777]">- Usability Testing</li>
+                    </ul>
+                    <div
+                      class="bottom-contain absolute bottom-4 left-4 right-4"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="portfolio" class="section-Portfolio 2xl:py-[80px] py-[70px]">
+      <div
+        class="banner text-center mb-[30px]"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="300"
+      >
+        <span class="text-[14px] text-[#777]">OUR WORK</span>
+        <h2
+          class="text-center mt-[5px] 2xl:text-[35px] xl:text-[33px] lg:text-[30px] md:text-[26px] sm:text-[24px] text-[22px] font-bold"
+        >
+          Selected <span class="text-[#006900]"> Projects</span>
+        </h2>
+      </div>
+      <div
+        class="flex flex-wrap justify-between items-center mx-auto mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] max-[320px]:px-[12px] px-6"
+      >
+        <div class="m-b-minus-24px w-full">
+          <div
+            class="portfolio-content"
+            id="MixItUpDA2FB7"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="600"
+          >
+            <div class="portfolio-content-items">
+              <div
+                class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[30px]"
+              >
+                <div class="mix blockchain templates">
+                  <div class="portfolio-img truncate rounded-2xl relative">
+                    <img
+                      src="assets/img/blockchain-1.jpg"
+                      alt="blockchain"
+                      class="h-[20rem] object-contain w-full transform transition duration-500 hover:scale-110"
+                    />
+                    <h3 class="top-contain absolute top-[15px] right-[15px]">
+                      <span
+                        class="bg-black rounded-full text-white font-normal text-[12px] px-2 py-1"
+                        >Blockchain Project</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="mix blockchain templates">
+                  <div class="portfolio-img truncate rounded-2xl relative">
+                    <img
+                      src="assets/img/blockchain-2.jpg"
+                      alt="blockchain"
+                      class="h-[20rem] object-contain w-full transform transition duration-500 hover:scale-110"
+                    />
+                    <h3 class="top-contain absolute top-[15px] right-[15px]">
+                      <span
+                        class="bg-black rounded-full text-white font-normal text-[12px] px-2 py-1"
+                        >Blockchain Project</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="mix blockchain templates">
+                  <div class="portfolio-img truncate rounded-2xl relative">
+                    <img
+                      src="assets/img/blockchain-3.jpg"
+                      alt="blockchain"
+                      class="h-[20rem] object-contain w-full transform transition duration-500 hover:scale-110"
+                    />
+                    <h3 class="top-contain absolute top-[15px] right-[15px]">
+                      <span
+                        class="bg-black rounded-full text-white font-normal text-[12px] px-2 py-1"
+                        >Blockchain Project</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="mix chatbot templates">
+                  <div class="portfolio-img truncate rounded-2xl relative">
+                    <img
+                      src="assets/img/chatbot-1.jpg"
+                      alt="chatbot"
+                      class="h-[20rem] object-contain w-full transform transition duration-500 hover:scale-110"
+                    />
+                    <h3 class="top-contain absolute top-[15px] right-[15px]">
+                      <span
+                        class="bg-black rounded-full text-white font-normal text-[12px] px-2 py-1"
+                        >Chatbot Project</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="mix chatbot templates">
+                  <div class="portfolio-img truncate rounded-2xl relative">
+                    <img
+                      src="assets/img/chatbot-2.jpg"
+                      alt="chatbot"
+                      class="h-[20rem] object-contain w-full transform transition duration-500 hover:scale-110"
+                    />
+                    <h3 class="top-contain absolute top-[15px] right-[15px]">
+                      <span
+                        class="bg-black rounded-full text-white font-normal text-[12px] px-2 py-1"
+                        >Chatbot Project</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="mix chatbot templates">
+                  <div class="portfolio-img truncate rounded-2xl relative">
+                    <img
+                      src="assets/img/chatbot-3.jpg"
+                      alt="chatbot"
+                      class="h-[20rem] object-contain w-full transform transition duration-500 hover:scale-110"
+                    />
+                    <h3 class="top-contain absolute top-[15px] right-[15px]">
+                      <span
+                        class="bg-black rounded-full text-white font-normal text-[12px] px-2 py-1"
+                        >Chatbot Project</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-Portfolio 2xl:py-[80px] py-[70px]">
+      <div
+        class="banner text-center mb-[30px]"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="300"
+      >
+        <h2
+          class="max-w-xl mx-5 mx-auto text-center mt-[5px] 2xl:text-[35px] xl:text-[33px] lg:text-[30px] md:text-[26px] sm:text-[24px] text-[22px] font-bold"
+        >
+          Empowering Innovation for Over
+          <span class="text-[#006900]"> 100 Clients Across 20+ Countries</span>
+        </h2>
+      </div>
+      <div
+        class="flex flex-wrap justify-between items-center mx-auto mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] max-[320px]:px-[12px] px-6"
+      >
+        <div class="m-b-minus-24px w-full">
+          <div
+            class=""
+            id="MixItUpDA2FB7"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="600"
+          >
+            <div
+              class="grid grid-cols-2 md:grid-cols-4 mt-[20px] md:mt-[33px] gap-[30px]"
+            >
+              <div
+                class="flex flex-col gap-3 text-center p-3 border rounded-md"
+              >
+                <h2 class="text-4xl md:text-7xl font-bold">10+</h2>
+                <p class="text-[#777]">Years of Excellence</p>
+              </div>
+              <div
+                class="flex flex-col gap-3 text-center p-3 border rounded-md"
+              >
+                <h2 class="text-4xl md:text-7xl font-bold">100+</h2>
+                <p class="text-[#777]">Satisfied Clients</p>
+              </div>
+              <div
+                class="flex flex-col gap-3 text-center p-3 border rounded-md"
+              >
+                <h2 class="text-4xl md:text-7xl font-bold">150+</h2>
+                <p class="text-[#777]">Successful Projects</p>
+              </div>
+              <div
+                class="flex flex-col gap-3 text-center p-3 border rounded-md"
+              >
+                <h2 class="text-4xl md:text-7xl font-bold">500+</h2>
+                <p class="text-[#777]">Cups of Coffee</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-Portfolio 2xl:py-[80px] py-[70px]">
+      <div
+        class="banner text-center mb-[30px]"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="300"
+      >
+        <span class="text-[14px] text-[#777]">FAQ</span>
+        <h2
+          class="text-center mt-[5px] 2xl:text-[35px] xl:text-[33px] lg:text-[30px] md:text-[26px] sm:text-[24px] text-[22px] font-bold"
+        >
+          Frequently Asked Questions
+          <span class="text-[#006900]">About Services</span>
+        </h2>
+        <!-- <div class="my-[30px]">
+            <p class="text-[20px] text-[#777]">Our Expertise</p>
+            <p class="text-[16px] text-[#777]">
+              Delivering innovative solutions tailored to meet your business
+              needs.
+            </p>
+            <a href="#contact" class="">Get in Touch</a>
+          </div> -->
+      </div>
+      <div
+        class="flex flex-wrap justify-between items-center mx-auto mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] max-[320px]:px-[12px] px-6"
+      >
+        <div class="m-b-minus-24px w-full">
+          <div
+            class="portfolio-content"
+            id="MixItUpDA2FB7"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="600"
+          >
+            <div
+              class="w-full mx-auto flex flex-col-reverse md:grid grid-cols-2 gap-10"
+            >
+              <div class="grid grid-cols-1 gap-3 h-fit">
+                <button
+                  id="collapseButton1"
+                  class="px-4 py-2 rounded-md w-full flex items-center justify-between border"
+                  onclick="toggleCollapse('content1', 'collapseIcon1')"
+                >
+                  <p>Toggle Collapse 1</p>
+                  <i
+                    id="collapseIcon1"
+                    class="fa fa-caret-right"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+
+                <div id="content1" class="hidden">
+                  <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-700">
+                      This is the content of the first collapsible section.
+                    </p>
+                  </div>
+                </div>
+
+                <button
+                  id="collapseButton2"
+                  class="px-4 py-2 rounded-md w-full flex items-center justify-between border"
+                  onclick="toggleCollapse('content2', 'collapseIcon2')"
+                >
+                  <p>Toggle Collapse 2</p>
+                  <i
+                    id="collapseIcon2"
+                    class="fa fa-caret-right"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+
+                <div id="content2" class="hidden">
+                  <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-700">
+                      This is the content of the first collapsible section.
+                    </p>
+                  </div>
+                </div>
+
+                <button
+                  id="collapseButton3"
+                  class="px-4 py-2 rounded-md w-full flex items-center justify-between border"
+                  onclick="toggleCollapse('content3', 'collapseIcon3')"
+                >
+                  <p>Toggle Collapse 3</p>
+                  <i
+                    id="collapseIcon3"
+                    class="fa fa-caret-right"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+
+                <div id="content3" class="hidden">
+                  <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-700">
+                      This is the content of the first collapsible section.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <img
+                src="assets/img/faq.jpg"
+                alt="faq"
+                class="w-full h-[230px] md:h-[360px] object-cover rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="section-contact 2xl:py-[80px] py-[70px]">
+      <div
+        class="banner text-center mb-[30px]"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="300"
+      >
+        <span class="text-[14px] text-[#777]">CONTACT US</span>
+        <h2
+          class="text-center mt-[5px] 2xl:text-[35px] xl:text-[33px] lg:text-[30px] md:text-[26px] sm:text-[24px] text-[22px] font-bold"
+        >
+          Get In <span class="text-[#006900]">Touch</span>
+        </h2>
+      </div>
+      <form>
+        <div
+          class="flex flex-wrap justify-between items-center mx-auto mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] max-[320px]:px-[12px] px-6"
+        >
+          <div class="m-b-minus-24px w-full">
+            <div
+              class="grid lg:grid-cols-2 grid-cols-1 gap-[30px]"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="300"
+            >
+              <div class="border rounded-lg">
+                <div class="border-b">
+                  <input
+                    type="text"
+                    class="appearance-none w-full py-6 px-3 text-gray-700 leading-tight focus:outline-none rounded-t-lg"
+                    id="fname"
+                    placeholder="Full Name"
+                  />
+                </div>
+                <div class="border-b">
+                  <input
+                    type="email"
+                    class="appearance-none w-full py-6 px-3 text-gray-700 leading-tight focus:outline-none"
+                    id="umail"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="border-b">
+                  <input
+                    type="text"
+                    class="appearance-none w-full py-6 px-3 text-gray-700 leading-tight focus:outline-none"
+                    id="phone"
+                    placeholder="Phone"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="appearance-none w-full py-6 px-3 text-gray-700 leading-tight focus:outline-none rounded-b-lg"
+                    id="subject"
+                    placeholder="Subject"
+                  />
+                </div>
+              </div>
+              <div class="mb-0">
+                <div class="mb-4">
+                  <textarea
+                    class="w-full border rounded-xl pl-4 pt-2 focus:outline-none"
+                    id="exampleFormControlTextarea1"
+                    rows="8"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <button
+                  type="button"
+                  class="text-white bg-[#006900] hover:bg-opacity-80 no-underline font-medium rounded-full text-sm px-8 py-2.5 mr-2"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="banner text-center mt-[50px] mb-[30px]"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="300"
+            >
+              <div
+                class="grid md:grid-cols-3 gap-2 mt-[15px] justify-items-center"
+              >
+                <a
+                  href="#"
+                  class="flex items-center gap-3 p-3 rounded-md border w-full justify-center"
+                >
+                  <img
+                    src="assets/img/phone.png"
+                    class="h-[1.7rem]"
+                    alt="phone"
+                  />
+                  <p class="text-[#777] font-semibold">+91-7892170086</p>
+                </a>
+                <a
+                  href="#"
+                  class="flex items-center gap-3 p-3 rounded-md border w-full justify-center"
+                >
+                  <img
+                    src="assets/img/email.png"
+                    class="h-[1.7rem]"
+                    alt="email"
+                  />
+                  <p class="text-[#777] font-semibold">Ceo@nviailabs.in</p>
+                </a>
+                <a
+                  href="#"
+                  class="flex items-center gap-3 p-3 rounded-md border w-full justify-center"
+                >
+                  <img
+                    src="assets/img/email.png"
+                    class="h-[1.7rem]"
+                    alt="email"
+                  />
+                  <p class="text-[#777] font-semibold">sales@nviailabs.in</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-[#070415]">
+      <div
+        class="flex justify-center mx-auto mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] 2xl:flex-row xl:flex-row lg:flex-row flex-col md:max-w-[720px] max-[320px]:px-[12px] sm:max-w-[540px] gap-[30px] px-6 py-8"
+      >
+        <div
+          class="lg:w-1/2 text-white text-[12px] font-normal 2xl:text-left xl:text-left text-center"
+        >
+          Copyright ©
+          <a href="index.html" class="hover:text-white font-semibold"
+            >NviAi Labs</a
+          >
+          all rights reserved. Powered by NviAi Labs.
+        </div>
+        <!-- <div
+          class="lg:w-1/2 text-white font-normal text-[12px] flex 2xl:justify-end xl:justify-end lg:justify-end justify-between"
+        >
+          <a href="javascript:void(0)" class="pr-10 hover:text-white"
+            >Privacy Policy</a
+          >
+          <a href="javascript:void(0)" class="hover:text-white"
+            >Terms and Conditions</a
+          >
+        </div> -->
+      </div>
+    </footer>
+
+    <!-- scroll Top -->
+    <div
+      id="scrollup"
+      class="fixed bg-[#006900] text-white rounded-full flex justify-center text-center items-center p-2 right-6 cursor-pointer bottom-6 h-10 w-10 z-20"
+    >
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+    <!-- Plugins JS -->
+    <script src="assets/js/tailwindcss/frostui.js"></script>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.parallaxmouse.min.js"></script>
+
+    <!-- Main Js -->
+    <script src="assets/js/index.js"></script>
+    <script>
+      // handle collapse click - FAQ
+      function toggleCollapse(contentId, iconId) {
+        const content = document.getElementById(contentId);
+        const icon = document.getElementById(iconId);
+
+        // Toggle the visibility of the content
+        content.classList.toggle("hidden");
+
+        // Toggle the caret icon between right and down
+        if (content.classList.contains("hidden")) {
+          icon.classList.remove("fa-caret-down");
+          icon.classList.add("fa-caret-right");
+        } else {
+          icon.classList.remove("fa-caret-right");
+          icon.classList.add("fa-caret-down");
+        }
+      }
+    </script>
+  </body>
+</html>
