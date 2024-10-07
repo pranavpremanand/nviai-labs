@@ -1,0 +1,420 @@
+<!--========================================================= 
+Item Name: Borox - Tailwind CSS Personal Portfolio Template.
+Author: ashishmaraviya
+Version: 1
+Copyright 2023
+============================================================-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us | NviAi Labs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N8C4F65L");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- site Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/font/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/aos.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+
+    <!-- main style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="overflow-x-hidden">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N8C4F65L"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Loader -->
+    <div id="bx-overlay">
+      <span class="loader"></span>
+    </div>
+
+    <!-- header -->
+    <header class="bg-[#EDEDED] w-full bx-static">
+      <nav class="border-gray-200 py-2">
+        <div
+          class="flex flex-wrap justify-between items-center px-6 mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] max-[320px]:px-[12px]"
+        >
+          <a href="index.html" class="flex items-center">
+            <img src="assets/img/logo.png" class="w-[70px]" alt="Logo" />
+          </a>
+          <div class="flex items-center lg:order-2">
+            <button
+              data-collapse-toggle="mobile-menu"
+              type="button"
+              id="dropdown-toggle"
+              class="inline-flex items-center border p-2 text-lg text-gray-500 rounded-lg lg:hidden"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+          <div
+            class="justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            id="mobile-menu"
+          >
+            <ul
+              class="flex flex-col font-medium lg:flex-row lg:space-x-8 2xl:border-0 lg:border-0 border lg:mt-0 lg-mb-4 lg:p-[0] lg:border-none lg:rounded-[0] lg:text-[15px] mt-4 p-[15px] 2xl:mb-0 xl:mb-0 lg:mb-0 mb-2 border-[#eee] rounded-[30px] text-[13px]"
+              id="top-menu"
+            >
+              <li class="nav-item">
+                <a
+                  href="index.html"
+                  class="block py-2 pr-4 pl-3 text-[#000] lg:p-0"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="about.html"
+                  class="block py-2 pr-4 pl-3 text-[#000] lg:p-0"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="services.html"
+                  class="block py-2 pr-4 pl-3 text-[#000] lg:p-0"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="portfolio.html"
+                  class="block py-2 pr-4 pl-3 text-[#000] lg:p-0"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="index.html"
+                  class="block py-2 pr-4 pl-3 text-[#000] lg:p-0"
+                  >FAQs</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="contactus.html"
+                  class="block py-2 pr-4 pl-3 text-[#000] lg:p-0"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <section
+      class="h-[55vh] w-full relative"
+      data-aos="fade-down"
+      data-aos-duration="2000"
+      data-aos-delay="300"
+    >
+      <div
+        class="absolute inset-0 h-full w-full bg-black/60 z-10 mt-[5rem]"
+      ></div>
+      <div
+        class="flex flex-col w-full h-full justify-center items-center absolute top-[19%] left-1/2 -translate-x-1/2 z-20"
+      >
+        <h1 class="text-4xl xl:text-6xl text-white font-bold">Contact Us</h1>
+        <div class="flex items-center justify-center mt-3 text-lg">
+          <a href="index.html" class="text-white">Home</a>
+          <span class="text-white mx-3">/</span>
+          <a href="contactus.html" class="text-white">Contact Us</a>
+        </div>
+      </div>
+      <img
+        src="assets/img/services.jpg"
+        class="h-full w-full object-cover absolute inset-0 mt-[5rem]"
+        alt=""
+      />
+    </section>
+
+    <!-- contact -->
+    <section
+      id="contact"
+      class="section-contact pt-[9rem] 2xl:pt-[11rem] 2xl:pb-[80px] pb-[70px]"
+    >
+      <div
+        class="banner text-center mb-[30px]"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="300"
+      >
+        <span class="text-[14px] text-[#777]">CONTACT US</span>
+        <h2
+          class="text-center mt-[5px] 2xl:text-[35px] xl:text-[33px] lg:text-[30px] md:text-[26px] sm:text-[24px] text-[22px] font-bold"
+        >
+          Get In <span class="text-[#006900]">Touch</span>
+        </h2>
+      </div>
+      <div>
+        <div
+          class="flex flex-wrap justify-between items-center mx-auto mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] max-[320px]:px-[12px] px-6"
+        >
+          <div class="m-b-minus-24px w-full">
+            <div
+              class="grid lg:grid-cols-2 grid-cols-1 gap-[30px]"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="300"
+            >
+              <div class="border rounded-lg">
+                <div class="border-b">
+                  <input
+                    class="appearance-none w-full py-6 px-3 text-gray-700 leading-tight focus:outline-none rounded-t-lg"
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Full Name"
+                    value=""
+                  />
+                </div>
+                <div class="border-b">
+                  <input
+                    class="appearance-none w-full py-6 px-3 text-gray-700 leading-tight focus:outline-none"
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Email"
+                    value=""
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="appearance-none w-full py-6 px-3 text-gray-700 leading-tight focus:outline-none rounded-b-lg"
+                    id="subject"
+                    name="subject"
+                    required
+                    placeholder="Subject"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="mb-0">
+                <div class="mb-4">
+                  <textarea
+                    class="w-full border rounded-xl pl-4 pt-2 focus:outline-none"
+                    id="message"
+                    name="message"
+                    required
+                    rows="8"
+                    placeholder="Message"
+                    value=""
+                  ></textarea>
+                </div>
+                <button
+                type="button"
+                onclick="sendEmail()"
+                  class="submit-btn text-white bg-[#006900] hover:bg-opacity-80 no-underline font-medium rounded-full text-sm px-8 py-2.5 mr-2"
+                >
+                  Submit
+                </button>
+                <div
+                  class="contact-form-success alert text-green-500 hidden mt-4"
+                >
+                  <strong>Success!</strong> Your message has been sent to us.
+                </div>
+
+                <div class="contact-form-error alert text-red-500 hidden mt-4">
+                  <strong>Error!</strong> There was an error sending your
+                  message.
+                  <span class="mail-error-message text-1 d-block"></span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="banner text-center mt-[50px] mb-[30px]"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="300"
+            >
+              <div
+                class="grid md:grid-cols-3 gap-2 mt-[15px] justify-items-center"
+              >
+                <a
+                  href="tel:+917892170086"
+                  class="flex items-center gap-3 p-3 rounded-md border w-full justify-center"
+                >
+                  <img
+                    src="assets/img/phone.png"
+                    class="h-[1.7rem]"
+                    alt="phone"
+                  />
+                  <p class="text-[#777] font-semibold">+91-7892170086</p>
+                </a>
+                <a
+                  href="mailto:ceo@nviailabs.in"
+                  class="flex items-center gap-3 p-3 rounded-md border w-full justify-center"
+                >
+                  <img
+                    src="assets/img/email.png"
+                    class="h-[1.7rem]"
+                    alt="email"
+                  />
+                  <p class="text-[#777] font-semibold">Ceo@nviailabs.in</p>
+                </a>
+                <a
+                  href="mailto:sales@nviailabs.in"
+                  class="flex items-center gap-3 p-3 rounded-md border w-full justify-center"
+                >
+                  <img
+                    src="assets/img/email.png"
+                    class="h-[1.7rem]"
+                    alt="email"
+                  />
+                  <p class="text-[#777] font-semibold">sales@nviailabs.in</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-[#070415]">
+      <div
+        class="flex justify-center mx-auto mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] 2xl:flex-row xl:flex-row lg:flex-row flex-col md:max-w-[720px] max-[320px]:px-[12px] sm:max-w-[540px] gap-[30px] px-6 py-8"
+      >
+        <div
+          class="lg:w-1/2 text-white text-[12px] font-normal 2xl:text-left xl:text-left text-center"
+        >
+          Copyright ©
+          <a href="index.html" class="hover:text-white font-semibold"
+            >NviAi Labs</a
+          >
+          all rights reserved. Powered by NviAi Labs.
+        </div>
+        <!-- <div
+          class="lg:w-1/2 text-white font-normal text-[12px] flex 2xl:justify-end xl:justify-end lg:justify-end justify-between"
+        >
+          <a href="javascript:void(0)" class="pr-10 hover:text-white"
+            >Privacy Policy</a
+          >
+          <a href="javascript:void(0)" class="hover:text-white"
+            >Terms and Conditions</a
+          >
+        </div> -->
+      </div>
+    </footer>
+
+    <!-- scroll Top -->
+    <div
+      id="scrollup"
+      class="fixed bg-[#006900] text-white rounded-full flex justify-center text-center items-center p-2 right-6 cursor-pointer bottom-6 h-10 w-10 z-20"
+    >
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+    <!-- send email -->
+    <script type="text/javascript">
+		function sendEmail() {
+			// Get input values
+			var name = document.getElementById("name").value;
+			var email = document.getElementById("email").value;
+			var message = document.getElementById("message").value;
+			var subject = document.getElementById("subject").value;
+
+			// Check if any required field is empty
+			if (!name || !email || !message || !subject) {
+				alert("Please fill in all fields.");
+				return;
+			}
+
+            document.getElementsByClassName('submit-btn')[0].innerHTML = 'Submitting';
+
+			var emailBody = "Name: " + name + "\n";
+			emailBody += "Email: " + email + "\n\n";
+			emailBody += "Message:\n" + message;
+			// Construct the request payload
+			var payload = {
+				to: "mpranavprem@gmail.com",
+				subject: subject,
+				body: emailBody
+			};
+
+			// Use Fetch API to send the request to your API
+			fetch('https://smtp-api-tawny.vercel.app/send-email', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify(payload)
+			})
+				.then(response => response.json())
+				.then(data => {
+					document.getElementById("name").value = '';
+					document.getElementById("email").value = '';
+					document.getElementById("message").value = '';
+					document.getElementById("subject").value = '';
+                    document.querySelector('.contact-form-success').classList.remove('hidden');
+                    document.getElementsByClassName('submit-btn')[0].innerHTML = 'Submit'
+
+                    setTimeout(() => {
+                        document.querySelector('.contact-form-success').classList.add('hidden');
+                    }, 4000);
+
+				})
+				.catch(error => {
+                    document.querySelector('.contact-form-success').classList.add('hidden');
+                    document.getElementsByClassName('submit-btn')[0].innerHTML = 'Submit'
+                    setTimeout(() => {
+                        document.querySelector('.contact-form-success').classList.remove('hidden');
+                    }, 4000);
+					console.error('Error sending email:', error); alert('Error sending email:', error);
+
+				});
+			// Construct the email body
+		}
+	</script>
+
+    <!-- Plugins JS -->
+    <script src="assets/js/tailwindcss/frostui.js"></script>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.parallaxmouse.min.js"></script>
+
+    <!-- Main Js -->
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
