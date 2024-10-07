@@ -38,7 +38,7 @@ Copyright 2023
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8C4F65L"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-     
+
     <!-- Loader -->
     <div id="bx-overlay">
       <span class="loader"></span>
@@ -388,7 +388,7 @@ Copyright 2023
           Get In <span class="text-[#006900]">Touch</span>
         </h2>
       </div>
-      <form action="send-email.php" method="post">
+      <div>
         <div
           class="flex flex-wrap justify-between items-center mx-auto mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] max-[320px]:px-[12px] px-6"
         >
@@ -408,6 +408,7 @@ Copyright 2023
                     name="name"
                     required
                     placeholder="Full Name"
+                    value=""
                   />
                 </div>
                 <div class="border-b">
@@ -418,6 +419,7 @@ Copyright 2023
                     name="email"
                     required
                     placeholder="Email"
+                    value=""
                   />
                 </div>
                 <div>
@@ -428,6 +430,7 @@ Copyright 2023
                     name="subject"
                     required
                     placeholder="Subject"
+                    value=""
                   />
                 </div>
               </div>
@@ -440,14 +443,27 @@ Copyright 2023
                     required
                     rows="8"
                     placeholder="Message"
+                    value=""
                   ></textarea>
                 </div>
                 <button
-                  type="submit"
-                  class="text-white bg-[#006900] hover:bg-opacity-80 no-underline font-medium rounded-full text-sm px-8 py-2.5 mr-2"
+                  type="button"
+                  onclick="sendEmail()"
+                  class="submit-btn text-white bg-[#006900] hover:bg-opacity-80 no-underline font-medium rounded-full text-sm px-8 py-2.5 mr-2"
                 >
                   Submit
                 </button>
+                <div
+                  class="contact-form-success alert text-green-500 hidden mt-4"
+                >
+                  <strong>Success!</strong> Your message has been sent to us.
+                </div>
+
+                <div class="contact-form-error alert text-red-500 hidden mt-4">
+                  <strong>Error!</strong> There was an error sending your
+                  message.
+                  <span class="mail-error-message text-1 d-block"></span>
+                </div>
               </div>
             </div>
 
@@ -480,7 +496,7 @@ Copyright 2023
                     class="h-[1.7rem]"
                     alt="email"
                   />
-                  <p class="text-[#777] font-semibold">Ceo@nviailabs.in</p>
+                  <p class="text-[#777] font-semibold">ceo@nviailabs.in</p>
                 </a>
                 <a
                   href="mailto:sales@nviailabs.in"
@@ -563,6 +579,89 @@ Copyright 2023
             icon.classList.remove("fa-caret-right");
             icon.classList.add("fa-caret-down");
           }
+        }
+      </script>
+
+      <!-- send email -->
+    <script type="text/javascript">
+        function sendEmail() {
+          // Get input values
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var message = document.getElementById("message").value;
+          var subject = document.getElementById("subject").value;
+  
+          // Check if any required field is empty
+          if (!name || !email || !message || !subject) {
+            alert("Please fill in all fields.");
+            return;
+          }
+  
+          document.getElementsByClassName("submit-btn")[0].innerHTML =
+            "Submitting";
+  
+          var emailBody = "Name: " + name + "\n";
+          emailBody += "Email: " + email + "\n\n";
+          emailBody += "Message:\n" + message;
+  
+          // Construct the request payloads
+          var payload1 = {
+            to: "ceo@nviailabs.in",
+            subject: subject,
+            body: emailBody,
+          };
+  
+          var payload2 = {
+            to: "sales@nviailabs.in",
+            subject: subject,
+            body: emailBody,
+          };
+  
+          // Function to handle API call for sending an email
+          function sendEmailRequest(payload) {
+            return fetch("https://smtp-api-tawny.vercel.app/send-email", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(payload),
+            })
+              .then((response) => response.json())
+              .catch((error) => {
+                console.error("Error sending email:", error);
+                alert("Error sending email: " + error);
+                throw error; // Re-throw the error to handle it later
+              });
+          }
+  
+          // Send the email to both email addresses
+          Promise.all([sendEmailRequest(payload1), sendEmailRequest(payload2)])
+            .then(() => {
+              // Clear form fields on success
+              document.getElementById("name").value = "";
+              document.getElementById("email").value = "";
+              document.getElementById("message").value = "";
+              document.getElementById("subject").value = "";
+              document
+                .querySelector(".contact-form-success")
+                .classList.remove("hidden");
+              document.getElementsByClassName("submit-btn")[0].innerHTML =
+                "Submit";
+  
+              // Hide success message after 4 seconds
+              setTimeout(() => {
+                document
+                  .querySelector(".contact-form-success")
+                  .classList.add("hidden");
+              }, 4000);
+            })
+            .catch(() => {
+              document
+                .querySelector(".contact-form-success")
+                .classList.add("hidden");
+              document.getElementsByClassName("submit-btn")[0].innerHTML =
+                "Submit";
+            });
         }
       </script>
   </body>

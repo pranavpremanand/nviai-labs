@@ -239,8 +239,8 @@ Copyright 2023
                   ></textarea>
                 </div>
                 <button
-                type="button"
-                onclick="sendEmail()"
+                  type="button"
+                  onclick="sendEmail()"
                   class="submit-btn text-white bg-[#006900] hover:bg-opacity-80 no-underline font-medium rounded-full text-sm px-8 py-2.5 mr-2"
                 >
                   Submit
@@ -288,7 +288,7 @@ Copyright 2023
                     class="h-[1.7rem]"
                     alt="email"
                   />
-                  <p class="text-[#777] font-semibold">Ceo@nviailabs.in</p>
+                  <p class="text-[#777] font-semibold">ceo@nviailabs.in</p>
                 </a>
                 <a
                   href="mailto:sales@nviailabs.in"
@@ -345,65 +345,86 @@ Copyright 2023
 
     <!-- send email -->
     <script type="text/javascript">
-		function sendEmail() {
-			// Get input values
-			var name = document.getElementById("name").value;
-			var email = document.getElementById("email").value;
-			var message = document.getElementById("message").value;
-			var subject = document.getElementById("subject").value;
+      function sendEmail() {
+        // Get input values
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+        var subject = document.getElementById("subject").value;
 
-			// Check if any required field is empty
-			if (!name || !email || !message || !subject) {
-				alert("Please fill in all fields.");
-				return;
-			}
+        // Check if any required field is empty
+        if (!name || !email || !message || !subject) {
+          alert("Please fill in all fields.");
+          return;
+        }
 
-            document.getElementsByClassName('submit-btn')[0].innerHTML = 'Submitting';
+        document.getElementsByClassName("submit-btn")[0].innerHTML =
+          "Submitting";
 
-			var emailBody = "Name: " + name + "\n";
-			emailBody += "Email: " + email + "\n\n";
-			emailBody += "Message:\n" + message;
-			// Construct the request payload
-			var payload = {
-				to: "mpranavprem@gmail.com",
-				subject: subject,
-				body: emailBody
-			};
+        var emailBody = "Name: " + name + "\n";
+        emailBody += "Email: " + email + "\n\n";
+        emailBody += "Message:\n" + message;
 
-			// Use Fetch API to send the request to your API
-			fetch('https://smtp-api-tawny.vercel.app/send-email', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify(payload)
-			})
-				.then(response => response.json())
-				.then(data => {
-					document.getElementById("name").value = '';
-					document.getElementById("email").value = '';
-					document.getElementById("message").value = '';
-					document.getElementById("subject").value = '';
-                    document.querySelector('.contact-form-success').classList.remove('hidden');
-                    document.getElementsByClassName('submit-btn')[0].innerHTML = 'Submit'
+        // Construct the request payloads
+        var payload1 = {
+          to: "ceo@nviailabs.in",
+          subject: subject,
+          body: emailBody,
+        };
 
-                    setTimeout(() => {
-                        document.querySelector('.contact-form-success').classList.add('hidden');
-                    }, 4000);
+        var payload2 = {
+          to: "sales@nviailabs.in",
+          subject: subject,
+          body: emailBody,
+        };
 
-				})
-				.catch(error => {
-                    document.querySelector('.contact-form-success').classList.add('hidden');
-                    document.getElementsByClassName('submit-btn')[0].innerHTML = 'Submit'
-                    setTimeout(() => {
-                        document.querySelector('.contact-form-success').classList.remove('hidden');
-                    }, 4000);
-					console.error('Error sending email:', error); alert('Error sending email:', error);
+        // Function to handle API call for sending an email
+        function sendEmailRequest(payload) {
+          return fetch("https://smtp-api-tawny.vercel.app/send-email", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload),
+          })
+            .then((response) => response.json())
+            .catch((error) => {
+              console.error("Error sending email:", error);
+              alert("Error sending email: " + error);
+              throw error; // Re-throw the error to handle it later
+            });
+        }
 
-				});
-			// Construct the email body
-		}
-	</script>
+        // Send the email to both email addresses
+        Promise.all([sendEmailRequest(payload1), sendEmailRequest(payload2)])
+          .then(() => {
+            // Clear form fields on success
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+            document.getElementById("subject").value = "";
+            document
+              .querySelector(".contact-form-success")
+              .classList.remove("hidden");
+            document.getElementsByClassName("submit-btn")[0].innerHTML =
+              "Submit";
+
+            // Hide success message after 4 seconds
+            setTimeout(() => {
+              document
+                .querySelector(".contact-form-success")
+                .classList.add("hidden");
+            }, 4000);
+          })
+          .catch(() => {
+            document
+              .querySelector(".contact-form-success")
+              .classList.add("hidden");
+            document.getElementsByClassName("submit-btn")[0].innerHTML =
+              "Submit";
+          });
+      }
+    </script>
 
     <!-- Plugins JS -->
     <script src="assets/js/tailwindcss/frostui.js"></script>
